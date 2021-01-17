@@ -1,5 +1,12 @@
+# INTEGRANTES
+
+# JORGE CHIMARRO
+# DAYANARA PEÃ‘AFIEL
+# GUIDO OCHOA
+# DIEGO CAJAMARCA
+
 library(readr)
-datos <- read_csv("C:/Users/JOCHA/Desktop/MAESTRIA/MODULO 8 - HERRAMIENTAS PARA CONTROL DE LA PRODUCCIÓN/deber 1/segmentation_data.csv")
+datos <- read_csv("C:/Users/JOCHA/Desktop/MAESTRIA/MODULO 8 - HERRAMIENTAS PARA CONTROL DE LA PRODUCCIÃ“N/deber 1/segmentation_data.csv")
 #View(datos)
 
 datos <- datos[,-c(1),drop=FALSE]
@@ -78,7 +85,7 @@ for (i in 1:10)
 plot((1:length(wi)),wi, xlab="Numero de Clusters", ylab="Suma Cuadrados Internos", pch=19, col="red", type = "b")
 
 ######################################
-########### VALIDACIÓN ###############
+########### VALIDACIÃ“N ###############
 ######################################
 
 library(cluster)
@@ -103,7 +110,7 @@ NMI2= NMI(g1,clus3,variant = c("joint"))
 
 
 ######################################
-#### Identificación de las Clases ####
+#### IdentificaciÃ³n de las Clases ####
 ######################################
 cliente = as.factor(comparacion$g1)         #GROUND
 
@@ -111,7 +118,7 @@ plot(x,y,col=c("red","green3","blue", "black")[cliente], main = "clientes Datase
 
 
 ######################################
-######### Validación Externa #########
+######### ValidaciÃ³n Externa #########
 ######################################
 # ARI, AMI, NMI
 #install.packages("aricode")
